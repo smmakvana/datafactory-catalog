@@ -1,9 +1,9 @@
 package com.paramichha.example.unsupported;
-import java.util.*;
-/** NOT supported. When MapTypeShaper added: move to type/. */
+
+/**
+ * Demonstrates a type DataFactory does not currently support.
+ * Included to document known boundaries.
+ */
 public class MapType {
-    private Map<String,String> properties; private Map<String,Integer> counts; private LinkedHashMap<String,String> orderedProps;
-    public MapType(){}
-    public Map<String,String> getProperties(){return properties;} public Map<String,Integer> getCounts(){return counts;} public LinkedHashMap<String,String> getOrderedProps(){return orderedProps;}
-    public void setProperties(Map<String,String> v){properties=v;} public void setCounts(Map<String,Integer> v){counts=v;} public void setOrderedProps(LinkedHashMap<String,String> v){orderedProps=v;}
+    public java.util.Map<String, Integer> data;;
 }

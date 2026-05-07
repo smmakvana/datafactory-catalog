@@ -1,9 +1,9 @@
 package com.paramichha.example.unsupported;
-import java.util.*;
-/** NOT supported. Rare in REST layer. */
+
+/**
+ * Demonstrates a type DataFactory does not currently support.
+ * Included to document known boundaries.
+ */
 public class QueueType {
-    private Queue<String> pending; private Deque<String> history; private ArrayDeque<Integer> buffer;
-    public QueueType(){}
-    public Queue<String> getPending(){return pending;} public Deque<String> getHistory(){return history;} public ArrayDeque<Integer> getBuffer(){return buffer;}
-    public void setPending(Queue<String> v){pending=v;} public void setHistory(Deque<String> v){history=v;} public void setBuffer(ArrayDeque<Integer> v){buffer=v;}
+    public java.util.Queue<String> queue;;
 }

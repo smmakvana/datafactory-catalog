@@ -1,8 +1,9 @@
 package com.paramichha.example.unsupported;
-/** Erased generic — Object at runtime. All null. Always stays here. */
+
+/**
+ * Demonstrates a type DataFactory does not currently support.
+ * Included to document known boundaries.
+ */
 public class ErasedGeneric {
-    private Object value; private Object payload; private Object metadata;
-    public ErasedGeneric(){}
-    public Object getValue(){return value;} public Object getPayload(){return payload;} public Object getMetadata(){return metadata;}
-    public void setValue(Object v){value=v;} public void setPayload(Object v){payload=v;} public void setMetadata(Object v){metadata=v;}
+    public java.util.List items;;
 }
