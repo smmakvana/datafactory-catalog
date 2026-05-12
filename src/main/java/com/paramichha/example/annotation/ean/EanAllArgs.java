@@ -5,5 +5,5 @@ import lombok.AllArgsConstructor;
 import lombok.Value;
 
 @Value @AllArgsConstructor
-public class EanAllArgs {    @NotBlank @EAN String barcode;;    @NotBlank String productName;;
+public class EanAllArgs {    @NotBlank @EAN String barcode;    @NotBlank String productName;
 }

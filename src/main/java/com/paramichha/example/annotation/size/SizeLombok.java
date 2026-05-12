@@ -8,5 +8,5 @@ import lombok.Value;
 public class SizeLombok {
     @Size(min=2, max=50) String name;
     @Size(min=8, max=100) String password;
-    @Size(min=1, max=10) List<String> tags;;
+    @Size(min=1, max=10) List<String> tags;
 }

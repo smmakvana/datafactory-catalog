@@ -6,6 +6,6 @@ import lombok.Value;
 
 @Value @Builder
 public class CreditCardLombok {
-    @NotBlank @CreditCardNumber String cardNumber;;
-    @NotBlank String cardHolder;;
+    @NotBlank @CreditCardNumber String cardNumber;
+    @NotBlank String cardHolder;
 }

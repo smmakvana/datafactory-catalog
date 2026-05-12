@@ -5,5 +5,5 @@ package com.paramichha.example.unsupported;
  * Included to document known boundaries.
  */
 public class CircularReference {
-    public CircularReference child;;
+    public CircularReference child;
 }

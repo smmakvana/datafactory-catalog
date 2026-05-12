@@ -5,5 +5,5 @@ package com.paramichha.example.unsupported;
  * Included to document known boundaries.
  */
 public class MapType {
-    public java.util.Map<String, Integer> data;;
+    public java.util.Map<String, Integer> data;
 }

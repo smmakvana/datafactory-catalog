@@ -5,6 +5,6 @@ import lombok.Value;
 
 @Value @Builder
 public class AssertBoolLombok {
-    @AssertTrue boolean active;;
-    @AssertFalse boolean deleted;;
+    @AssertTrue boolean active;
+    @AssertFalse boolean deleted;
 }

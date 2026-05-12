@@ -5,5 +5,5 @@ package com.paramichha.example.unsupported;
  * Included to document known boundaries.
  */
 public class QueueType {
-    public java.util.Queue<String> queue;;
+    public java.util.Queue<String> queue;
 }

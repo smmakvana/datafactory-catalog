@@ -5,5 +5,5 @@ package com.paramichha.example.unsupported;
  * Included to document known boundaries.
  */
 public class ArrayType {
-    public String[] items;;
+    public String[] items;
 }

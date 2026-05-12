@@ -4,5 +4,5 @@ import lombok.AllArgsConstructor;
 import lombok.Value;
 
 @Value @AllArgsConstructor
-public class AssertBoolAllArgs {    @AssertTrue boolean active;;    @AssertFalse boolean deleted;;
+public class AssertBoolAllArgs {    @AssertTrue boolean active;    @AssertFalse boolean deleted;
 }

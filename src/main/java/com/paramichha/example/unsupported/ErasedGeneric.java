@@ -5,5 +5,5 @@ package com.paramichha.example.unsupported;
  * Included to document known boundaries.
  */
 public class ErasedGeneric {
-    public java.util.List items;;
+    public java.util.List items;
 }
