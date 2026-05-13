@@ -12,35 +12,42 @@
         <version>1.1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>paramichha-example</artifactId>
+    <artifactId>datafactory-catalog</artifactId>
     <version>0.2.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>Paramichha Example</name>
+    <name>DataFactory Catalog</name>
     <description>
-        Example fixture classes for Paramichha DataFactory and TestKit.
-        Provides realistic Jakarta-annotated POJOs, records, and Lombok classes
-        covering all supported types, annotations, and assembly strategies.
-        Use as a test-scope dependency to get ready-made annotated fixtures.
+        A comprehensive catalog of Jakarta-annotated classes covering all types,
+        annotation combinations, collection strategies, and real-world patterns
+        supported by Paramichha DataFactory and TestKit.
+
+        Organised by type (logical, number, decimal, text, date, datetime),
+        annotation (notnull, notblank, email, size, numeric, temporal, pattern),
+        collection (list, set, map, array, queue), and real-world (registration,
+        payment, address, trading).
+
+        Used as a test-scope dependency to verify DataFactory generates correct
+        valid and invalid instances across all supported scenarios.
     </description>
     <url>https://paramichha.com</url>
 
     <scm>
-        <connection>scm:git:git://github.com/smmakvana/paramichha-example.git</connection>
-        <developerConnection>scm:git:ssh://github.com/smmakvana/paramichha-example.git</developerConnection>
-        <url>https://github.com/smmakvana/paramichha-example</url>
+        <connection>scm:git:git://github.com/smmakvana/datafactory-catalog.git</connection>
+        <developerConnection>scm:git:ssh://github.com/smmakvana/datafactory-catalog.git</developerConnection>
+        <url>https://github.com/smmakvana/datafactory-catalog</url>
         <tag>HEAD</tag>
     </scm>
 
     <dependencies>
 
-        <!-- Jakarta validation — annotations on fixture classes -->
+        <!-- Jakarta validation — annotations on catalog classes -->
         <dependency>
             <groupId>jakarta.validation</groupId>
             <artifactId>jakarta.validation-api</artifactId>
         </dependency>
 
-        <!-- Hibernate Validator — needed to run validation on fixture instances -->
+        <!-- Hibernate Validator — constraint implementation -->
         <dependency>
             <groupId>org.hibernate.validator</groupId>
             <artifactId>hibernate-validator</artifactId>
@@ -52,16 +59,10 @@
             <artifactId>expressly</artifactId>
         </dependency>
 
-        <!-- Lombok — @Value @Builder @AllArgsConstructor on fixture classes -->
+        <!-- Lombok — @Value @Builder @AllArgsConstructor strategies -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-        </dependency>
-
-        <!-- Hibernate Validator extra constraints — @CreditCardNumber @EAN @ISBN @URL @Length -->
-        <dependency>
-            <groupId>org.hibernate.validator</groupId>
-            <artifactId>hibernate-validator</artifactId>
         </dependency>
 
     </dependencies>
