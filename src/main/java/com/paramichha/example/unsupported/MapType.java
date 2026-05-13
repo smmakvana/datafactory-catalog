@@ -1,8 +1,7 @@
 package com.paramichha.example.unsupported;
 
-/**
- * Demonstrates DataFactory support for java.util.Map<String, Integer> fields.
- */
+import java.util.Map;
+
 public class MapType {
-    public java.util.Map<String, Integer> data;
+    public Map<String, Integer> data;
 }

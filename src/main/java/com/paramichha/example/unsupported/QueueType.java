@@ -1,8 +1,8 @@
 package com.paramichha.example.unsupported;
 
-/**
- * Demonstrates DataFactory support for java.util.Queue<String> fields.
- */
+
+import java.util.Queue;
+
 public class QueueType {
-    public java.util.Queue<String> queue;
+    public Queue<String> queue;
 }

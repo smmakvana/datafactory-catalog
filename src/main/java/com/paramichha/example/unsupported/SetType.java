@@ -1,8 +1,8 @@
 package com.paramichha.example.unsupported;
 
-/**
- * Demonstrates DataFactory support for java.util.Set<String> fields.
- */
+
+import java.util.Set;
+
 public class SetType {
-    public java.util.Set<String> items;
+    public Set<String> items;
 }
