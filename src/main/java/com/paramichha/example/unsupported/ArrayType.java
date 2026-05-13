@@ -1,8 +1,7 @@
 package com.paramichha.example.unsupported;
 
 /**
- * Demonstrates a type DataFactory does not currently support.
- * Included to document known boundaries.
+ * Demonstrates DataFactory support for String[] fields.
  */
 public class ArrayType {
     public String[] items;
