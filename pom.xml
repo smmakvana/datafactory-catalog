@@ -63,6 +63,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+            <scope>provided</scope> <!-- compile-time only; compiled fixtures do not need Lombok -->
         </dependency>
 
     </dependencies>
