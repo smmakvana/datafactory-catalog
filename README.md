@@ -22,7 +22,7 @@ Test scope only — this is fixture data, not a library to ship:
 </dependency>
 ```
 
-Requires Java 21.
+Requires Java 21 or later.
 
 ---
 
