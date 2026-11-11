@@ -40,11 +40,8 @@
     </scm>
 
     <properties>
-        <!-- Overrides of the paramichha-dev defaults, removed one by one as this repository is cleaned:
-             spotless.check.skip once it is formatted with spotless:apply, quality.fail once
-             Checkstyle, PMD and SpotBugs report nothing. -->
-        <spotless.check.skip>true</spotless.check.skip>
-        <quality.fail>false</quality.fail>
+        <!-- SpotBugs patterns that are the point of a fixture, with the reason for each. -->
+        <spotbugs.excludeFilterFile>${project.basedir}/spotbugs-exclude.xml</spotbugs.excludeFilterFile>
     </properties>
 
     <dependencies>

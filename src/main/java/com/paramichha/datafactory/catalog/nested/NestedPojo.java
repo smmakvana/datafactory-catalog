@@ -25,34 +25,36 @@ import jakarta.validation.constraints.NotNull;
  * <p>Constraints: @NotBlank, @NotNull, @Valid.
  */
 public class NestedPojo {
-  @NotBlank String name;
-  @NotNull @Valid Address address;
-  @NotBlank String email;
+    @NotBlank String name;
 
-  public NestedPojo() {}
+    @NotNull @Valid Address address;
 
-  public String getName() {
-    return name;
-  }
+    @NotBlank String email;
 
-  public void setName(String name) {
-    this.name = name;
-  }
+    public NestedPojo() {}
 
-  public Address getAddress() {
-    return address;
-  }
+    public String getName() {
+        return name;
+    }
 
-  public void setAddress(Address address) {
-    this.address = address;
-  }
+    public void setName(String name) {
+        this.name = name;
+    }
 
-  public String getEmail() {
-    return email;
-  }
+    public Address getAddress() {
+        return address;
+    }
 
-  public void setEmail(String email) {
-    this.email = email;
-  }
-  ;
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    ;
 }

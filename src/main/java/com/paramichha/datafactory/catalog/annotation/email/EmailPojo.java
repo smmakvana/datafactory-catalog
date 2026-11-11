@@ -24,25 +24,26 @@ import jakarta.validation.constraints.NotBlank;
  * <p>Constraints: @Email, @NotBlank.
  */
 public class EmailPojo {
-  @NotBlank @Email String email;
-  @Email String backupEmail;
+    @NotBlank @Email String email;
 
-  public EmailPojo() {}
+    @Email String backupEmail;
 
-  public String getEmail() {
-    return email;
-  }
+    public EmailPojo() {}
 
-  public void setEmail(String email) {
-    this.email = email;
-  }
+    public String getEmail() {
+        return email;
+    }
 
-  public String getBackupEmail() {
-    return backupEmail;
-  }
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
-  public void setBackupEmail(String backupEmail) {
-    this.backupEmail = backupEmail;
-  }
-  ;
+    public String getBackupEmail() {
+        return backupEmail;
+    }
+
+    public void setBackupEmail(String backupEmail) {
+        this.backupEmail = backupEmail;
+    }
+    ;
 }

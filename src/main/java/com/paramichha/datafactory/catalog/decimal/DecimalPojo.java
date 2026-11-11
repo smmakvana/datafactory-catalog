@@ -30,75 +30,66 @@ import java.math.BigDecimal;
  * <p>Constraints: @DecimalMax, @DecimalMin, @Digits, @NotBlank, @NotNull, @Positive, @PositiveOrZero.
  */
 public class DecimalPojo {
-  @NotNull
-  @DecimalMin("0.00")
-  @DecimalMax("999999.99")
-  BigDecimal price;
+    @NotNull @DecimalMin("0.00") @DecimalMax("999999.99") BigDecimal price;
 
-  @NotNull
-  @Digits(integer = 8, fraction = 2)
-  BigDecimal amount;
+    @NotNull @Digits(integer = 8, fraction = 2) BigDecimal amount;
 
-  @NotNull @Positive BigDecimal tax;
-  @NotNull @PositiveOrZero Double rating;
+    @NotNull @Positive BigDecimal tax;
 
-  @NotNull
-  @DecimalMin("0.0")
-  @DecimalMax("1.0")
-  Double probability;
+    @NotNull @PositiveOrZero Double rating;
 
-  @NotBlank
-  @DecimalMin("0.01")
-  String minAmount;
+    @NotNull @DecimalMin("0.0") @DecimalMax("1.0") Double probability;
 
-  public DecimalPojo() {}
+    @NotBlank @DecimalMin("0.01") String minAmount;
 
-  public BigDecimal getPrice() {
-    return price;
-  }
+    public DecimalPojo() {}
 
-  public void setPrice(BigDecimal price) {
-    this.price = price;
-  }
+    public BigDecimal getPrice() {
+        return price;
+    }
 
-  public BigDecimal getAmount() {
-    return amount;
-  }
+    public void setPrice(BigDecimal price) {
+        this.price = price;
+    }
 
-  public void setAmount(BigDecimal amount) {
-    this.amount = amount;
-  }
+    public BigDecimal getAmount() {
+        return amount;
+    }
 
-  public BigDecimal getTax() {
-    return tax;
-  }
+    public void setAmount(BigDecimal amount) {
+        this.amount = amount;
+    }
 
-  public void setTax(BigDecimal tax) {
-    this.tax = tax;
-  }
+    public BigDecimal getTax() {
+        return tax;
+    }
 
-  public Double getRating() {
-    return rating;
-  }
+    public void setTax(BigDecimal tax) {
+        this.tax = tax;
+    }
 
-  public void setRating(Double rating) {
-    this.rating = rating;
-  }
+    public Double getRating() {
+        return rating;
+    }
 
-  public Double getProbability() {
-    return probability;
-  }
+    public void setRating(Double rating) {
+        this.rating = rating;
+    }
 
-  public void setProbability(Double probability) {
-    this.probability = probability;
-  }
+    public Double getProbability() {
+        return probability;
+    }
 
-  public String getMinAmount() {
-    return minAmount;
-  }
+    public void setProbability(Double probability) {
+        this.probability = probability;
+    }
 
-  public void setMinAmount(String minAmount) {
-    this.minAmount = minAmount;
-  }
-  ;
+    public String getMinAmount() {
+        return minAmount;
+    }
+
+    public void setMinAmount(String minAmount) {
+        this.minAmount = minAmount;
+    }
+    ;
 }

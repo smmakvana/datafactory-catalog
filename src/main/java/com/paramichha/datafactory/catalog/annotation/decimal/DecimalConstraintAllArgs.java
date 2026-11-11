@@ -30,10 +30,7 @@ import lombok.Value;
 @Value
 @AllArgsConstructor
 public class DecimalConstraintAllArgs {
-  @DecimalMin("0.00")
-  @DecimalMax("999.99")
-  BigDecimal price;
+    @DecimalMin("0.00") @DecimalMax("999.99") BigDecimal price;
 
-  @Digits(integer = 6, fraction = 2)
-  BigDecimal amount;
+    @Digits(integer = 6, fraction = 2) BigDecimal amount;
 }

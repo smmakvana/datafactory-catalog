@@ -32,59 +32,56 @@ import java.time.LocalDate;
  * <p>Constraints: @Email, @Max, @Min, @NotBlank, @NotNull, @Past, @Positive, @Size.
  */
 public class CombinedPojo {
-  @NotBlank @Email String email;
+    @NotBlank @Email String email;
 
-  @NotBlank
-  @Size(min = 2, max = 50)
-  String name;
+    @NotBlank @Size(min = 2, max = 50) String name;
 
-  @Min(18)
-  @Max(120)
-  int age;
+    @Min(18) @Max(120) int age;
 
-  @NotNull @Past LocalDate dateOfBirth;
-  @NotNull @Positive BigDecimal balance;
+    @NotNull @Past LocalDate dateOfBirth;
 
-  public CombinedPojo() {}
+    @NotNull @Positive BigDecimal balance;
 
-  public String getEmail() {
-    return email;
-  }
+    public CombinedPojo() {}
 
-  public void setEmail(String email) {
-    this.email = email;
-  }
+    public String getEmail() {
+        return email;
+    }
 
-  public String getName() {
-    return name;
-  }
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
-  public void setName(String name) {
-    this.name = name;
-  }
+    public String getName() {
+        return name;
+    }
 
-  public int getAge() {
-    return age;
-  }
+    public void setName(String name) {
+        this.name = name;
+    }
 
-  public void setAge(int age) {
-    this.age = age;
-  }
+    public int getAge() {
+        return age;
+    }
 
-  public LocalDate getDateOfBirth() {
-    return dateOfBirth;
-  }
+    public void setAge(int age) {
+        this.age = age;
+    }
 
-  public void setDateOfBirth(LocalDate dateOfBirth) {
-    this.dateOfBirth = dateOfBirth;
-  }
+    public LocalDate getDateOfBirth() {
+        return dateOfBirth;
+    }
 
-  public BigDecimal getBalance() {
-    return balance;
-  }
+    public void setDateOfBirth(LocalDate dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
 
-  public void setBalance(BigDecimal balance) {
-    this.balance = balance;
-  }
-  ;
+    public BigDecimal getBalance() {
+        return balance;
+    }
+
+    public void setBalance(BigDecimal balance) {
+        this.balance = balance;
+    }
+    ;
 }

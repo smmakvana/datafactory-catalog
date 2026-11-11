@@ -35,104 +35,96 @@ import org.junit.jupiter.api.Test;
 @DisplayName("Catalog self-check")
 class CatalogSelfTest {
 
-  private static final Path SOURCES = Path.of("src/main/java/com/paramichha/datafactory/catalog");
-  private static final String BASE = "com.paramichha.datafactory.catalog";
-  private static final Set<String> STYLES = Set.of("Record", "Lombok", "AllArgs", "Pojo");
+    private static final Path SOURCES = Path.of("src/main/java/com/paramichha/datafactory/catalog");
+    private static final String BASE = "com.paramichha.datafactory.catalog";
+    private static final Set<String> STYLES = Set.of("Record", "Lombok", "AllArgs", "Pojo");
 
-  private static List<Path> fixtures() throws IOException {
-    try (Stream<Path> files = Files.walk(SOURCES)) {
-      return files
-          .filter(p -> p.toString().endsWith(".java"))
-          .filter(p -> !p.getFileName().toString().equals("package-info.java"))
-          .sorted()
-          .collect(Collectors.toList());
+    private static List<Path> fixtures() throws IOException {
+        try (Stream<Path> files = Files.walk(SOURCES)) {
+            return files.filter(p -> p.toString().endsWith(".java"))
+                    .filter(p -> !p.getFileName().toString().equals("package-info.java"))
+                    .sorted()
+                    .collect(Collectors.toList());
+        }
     }
-  }
 
-  private static String read(Path p) {
-    try {
-      return Files.readString(p);
-    } catch (IOException e) {
-      throw new UncheckedIOException(e);
+    private static String read(Path p) {
+        try {
+            return Files.readString(p);
+        } catch (IOException e) {
+            throw new UncheckedIOException(e);
+        }
     }
-  }
 
-  @Test
-  @DisplayName("every package has a package-info description")
-  void everyPackageIsDescribed() throws IOException {
-    List<Path> missing =
-        fixtures().stream()
-            .map(Path::getParent)
-            .distinct()
-            .filter(dir -> !Files.exists(dir.resolve("package-info.java")))
-            .collect(Collectors.toList());
-    assertThat(missing).as("packages without package-info.java").isEmpty();
-  }
-
-  @Test
-  @DisplayName("every fixture class has Javadoc")
-  void everyClassIsDocumented() throws IOException {
-    List<String> undocumented =
-        fixtures().stream()
-            .filter(p -> !read(p).contains("/**"))
-            .map(Path::toString)
-            .collect(Collectors.toList());
-    assertThat(undocumented).as("classes without Javadoc").isEmpty();
-  }
-
-  @Test
-  @DisplayName("no wildcard imports")
-  void noWildcardImports() throws IOException {
-    List<String> offenders =
-        fixtures().stream()
-            .filter(p -> read(p).matches("(?s).*import [\\w.]+\\.\\*;.*"))
-            .map(Path::toString)
-            .collect(Collectors.toList());
-    assertThat(offenders).as("files with wildcard imports").isEmpty();
-  }
-
-  @Test
-  @DisplayName("every annotation package has all four styles")
-  void everyConstraintHasAllStyles() throws IOException {
-    List<Path> constraintDirs;
-    try (Stream<Path> dirs = Files.list(SOURCES.resolve("annotation"))) {
-      constraintDirs = dirs.filter(Files::isDirectory).sorted().collect(Collectors.toList());
+    @Test
+    @DisplayName("every package has a package-info description")
+    void everyPackageIsDescribed() throws IOException {
+        List<Path> missing = fixtures().stream()
+                .map(Path::getParent)
+                .distinct()
+                .filter(dir -> !Files.exists(dir.resolve("package-info.java")))
+                .collect(Collectors.toList());
+        assertThat(missing).as("packages without package-info.java").isEmpty();
     }
-    for (Path dir : constraintDirs) {
-      Set<String> styles;
-      try (Stream<Path> files = Files.list(dir)) {
-        styles =
-            files
-                .map(p -> p.getFileName().toString().replace(".java", ""))
-                .filter(n -> !n.equals("package-info"))
-                .map(n -> STYLES.stream().filter(n::endsWith).findFirst().orElse("?"))
-                .collect(Collectors.toSet());
-      }
-      assertThat(styles).as("styles in " + dir.getFileName()).containsAll(STYLES);
-    }
-  }
 
-  @Test
-  @DisplayName("every fixture class compiles and loads")
-  void everyFixtureLoads() throws IOException {
-    List<String> failed =
-        fixtures().stream()
-            .map(
-                p -> {
-                  String relative =
-                      SOURCES.relativize(p).toString().replace('\\', '/').replace(".java", "");
-                  return BASE + "." + relative.replace('/', '.');
+    @Test
+    @DisplayName("every fixture class has Javadoc")
+    void everyClassIsDocumented() throws IOException {
+        List<String> undocumented = fixtures().stream()
+                .filter(p -> !read(p).contains("/**"))
+                .map(Path::toString)
+                .collect(Collectors.toList());
+        assertThat(undocumented).as("classes without Javadoc").isEmpty();
+    }
+
+    @Test
+    @DisplayName("no wildcard imports")
+    void noWildcardImports() throws IOException {
+        List<String> offenders = fixtures().stream()
+                .filter(p -> read(p).matches("(?s).*import [\\w.]+\\.\\*;.*"))
+                .map(Path::toString)
+                .collect(Collectors.toList());
+        assertThat(offenders).as("files with wildcard imports").isEmpty();
+    }
+
+    @Test
+    @DisplayName("every annotation package has all four styles")
+    void everyConstraintHasAllStyles() throws IOException {
+        List<Path> constraintDirs;
+        try (Stream<Path> dirs = Files.list(SOURCES.resolve("annotation"))) {
+            constraintDirs = dirs.filter(Files::isDirectory).sorted().collect(Collectors.toList());
+        }
+        for (Path dir : constraintDirs) {
+            Set<String> styles;
+            try (Stream<Path> files = Files.list(dir)) {
+                styles = files.map(p -> p.getFileName().toString().replace(".java", ""))
+                        .filter(n -> !n.equals("package-info"))
+                        .map(n ->
+                                STYLES.stream().filter(n::endsWith).findFirst().orElse("?"))
+                        .collect(Collectors.toSet());
+            }
+            assertThat(styles).as("styles in " + dir.getFileName()).containsAll(STYLES);
+        }
+    }
+
+    @Test
+    @DisplayName("every fixture class compiles and loads")
+    void everyFixtureLoads() throws IOException {
+        List<String> failed = fixtures().stream()
+                .map(p -> {
+                    String relative =
+                            SOURCES.relativize(p).toString().replace('\\', '/').replace(".java", "");
+                    return BASE + "." + relative.replace('/', '.');
                 })
-            .filter(
-                name -> {
-                  try {
-                    Class.forName(name);
-                    return false;
-                  } catch (ClassNotFoundException | LinkageError e) {
-                    return true;
-                  }
+                .filter(name -> {
+                    try {
+                        Class.forName(name);
+                        return false;
+                    } catch (ClassNotFoundException | LinkageError e) {
+                        return true;
+                    }
                 })
-            .collect(Collectors.toList());
-    assertThat(failed).as("classes that do not load").isEmpty();
-  }
+                .collect(Collectors.toList());
+        assertThat(failed).as("classes that do not load").isEmpty();
+    }
 }

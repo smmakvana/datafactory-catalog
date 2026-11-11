@@ -21,6 +21,6 @@ package com.paramichha.datafactory.catalog.realworld.trading;
  * <p>Used as a control: it has no constraints.
  */
 public enum TradeSide {
-  BUY,
-  SELL
+    BUY,
+    SELL
 }

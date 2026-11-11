@@ -25,7 +25,7 @@ import jakarta.validation.constraints.Past;
  * <p>Constraints: @Future, @NotNull, @Past.
  */
 public record DateTimeRecord(
-    @NotNull @Past java.time.LocalDateTime createdAt,
-    @NotNull @Future java.time.ZonedDateTime scheduledAt,
-    @NotNull java.time.Instant occurredAt,
-    java.time.OffsetDateTime updatedAt) {}
+        @NotNull @Past java.time.LocalDateTime createdAt,
+        @NotNull @Future java.time.ZonedDateTime scheduledAt,
+        @NotNull java.time.Instant occurredAt,
+        java.time.OffsetDateTime updatedAt) {}

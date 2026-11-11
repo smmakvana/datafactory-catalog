@@ -28,6 +28,8 @@ import org.hibernate.validator.constraints.EAN;
 @Value
 @Builder
 public class EanLombok {
-  @NotBlank @EAN String barcode;
-  @NotBlank String productName;
+    @NotBlank @EAN
+    String barcode;
+
+    @NotBlank String productName;
 }

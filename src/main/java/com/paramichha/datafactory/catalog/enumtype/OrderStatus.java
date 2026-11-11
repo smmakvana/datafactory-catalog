@@ -21,9 +21,9 @@ package com.paramichha.datafactory.catalog.enumtype;
  * <p>Used as a control: it has no constraints.
  */
 public enum OrderStatus {
-  PENDING,
-  CONFIRMED,
-  SHIPPED,
-  DELIVERED,
-  CANCELLED;
+    PENDING,
+    CONFIRMED,
+    SHIPPED,
+    DELIVERED,
+    CANCELLED;
 }

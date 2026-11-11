@@ -23,4 +23,5 @@ import jakarta.validation.constraints.AssertTrue;
  *
  * <p>Constraints: @AssertFalse, @AssertTrue.
  */
-public record AssertBoolRecord(@AssertTrue boolean active, @AssertFalse boolean deleted) {}
+public record AssertBoolRecord(
+        @AssertTrue boolean active, @AssertFalse boolean deleted) {}

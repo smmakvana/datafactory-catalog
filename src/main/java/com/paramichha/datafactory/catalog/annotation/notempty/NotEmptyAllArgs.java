@@ -28,7 +28,9 @@ import lombok.Value;
 @Value
 @AllArgsConstructor
 public class NotEmptyAllArgs {
-  @NotEmpty String name;
-  @NotEmpty List<String> roles;
-  @NotEmpty List<Integer> scores;
+    @NotEmpty String name;
+
+    @NotEmpty List<String> roles;
+
+    @NotEmpty List<Integer> scores;
 }

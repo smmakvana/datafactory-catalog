@@ -29,8 +29,11 @@ import lombok.Value;
 @Value
 @Builder
 public class NotNullLombok {
-  @NotNull String name;
-  @NotNull Integer age;
-  @NotNull UUID id;
-  @NotNull LocalDate dob;
+    @NotNull String name;
+
+    @NotNull Integer age;
+
+    @NotNull UUID id;
+
+    @NotNull LocalDate dob;
 }

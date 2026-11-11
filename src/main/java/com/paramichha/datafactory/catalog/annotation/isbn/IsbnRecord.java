@@ -23,4 +23,5 @@ import jakarta.validation.constraints.NotBlank;
  * <p>Constraints: @NotBlank.
  */
 public record IsbnRecord(
-    @NotBlank @org.hibernate.validator.constraints.ISBN String isbn, @NotBlank String title) {}
+        @NotBlank @org.hibernate.validator.constraints.ISBN String isbn,
+        @NotBlank String title) {}

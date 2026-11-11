@@ -25,43 +25,46 @@ import jakarta.validation.constraints.Past;
  * <p>Constraints: @Future, @NotNull, @Past.
  */
 public class DateTimePojo {
-  @NotNull @Past java.time.LocalDateTime createdAt;
-  @NotNull @Future java.time.ZonedDateTime scheduledAt;
-  @NotNull java.time.Instant occurredAt;
-  java.time.OffsetDateTime updatedAt;
+    @NotNull @Past java.time.LocalDateTime createdAt;
 
-  public DateTimePojo() {}
+    @NotNull @Future java.time.ZonedDateTime scheduledAt;
 
-  public java.time.LocalDateTime getCreatedAt() {
-    return createdAt;
-  }
+    @NotNull java.time.Instant occurredAt;
 
-  public void setCreatedAt(java.time.LocalDateTime createdAt) {
-    this.createdAt = createdAt;
-  }
+    java.time.OffsetDateTime updatedAt;
 
-  public java.time.ZonedDateTime getScheduledAt() {
-    return scheduledAt;
-  }
+    public DateTimePojo() {}
 
-  public void setScheduledAt(java.time.ZonedDateTime scheduledAt) {
-    this.scheduledAt = scheduledAt;
-  }
+    public java.time.LocalDateTime getCreatedAt() {
+        return createdAt;
+    }
 
-  public java.time.Instant getOccurredAt() {
-    return occurredAt;
-  }
+    public void setCreatedAt(java.time.LocalDateTime createdAt) {
+        this.createdAt = createdAt;
+    }
 
-  public void setOccurredAt(java.time.Instant occurredAt) {
-    this.occurredAt = occurredAt;
-  }
+    public java.time.ZonedDateTime getScheduledAt() {
+        return scheduledAt;
+    }
 
-  public java.time.OffsetDateTime getUpdatedAt() {
-    return updatedAt;
-  }
+    public void setScheduledAt(java.time.ZonedDateTime scheduledAt) {
+        this.scheduledAt = scheduledAt;
+    }
 
-  public void setUpdatedAt(java.time.OffsetDateTime updatedAt) {
-    this.updatedAt = updatedAt;
-  }
-  ;
+    public java.time.Instant getOccurredAt() {
+        return occurredAt;
+    }
+
+    public void setOccurredAt(java.time.Instant occurredAt) {
+        this.occurredAt = occurredAt;
+    }
+
+    public java.time.OffsetDateTime getUpdatedAt() {
+        return updatedAt;
+    }
+
+    public void setUpdatedAt(java.time.OffsetDateTime updatedAt) {
+        this.updatedAt = updatedAt;
+    }
+    ;
 }

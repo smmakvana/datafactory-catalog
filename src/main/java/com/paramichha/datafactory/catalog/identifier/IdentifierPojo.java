@@ -24,34 +24,36 @@ import java.util.UUID;
  * <p>Constraints: @NotNull.
  */
 public class IdentifierPojo {
-  @NotNull UUID id;
-  @NotNull UUID correlationId;
-  UUID parentId;
+    @NotNull UUID id;
 
-  public IdentifierPojo() {}
+    @NotNull UUID correlationId;
 
-  public UUID getId() {
-    return id;
-  }
+    UUID parentId;
 
-  public void setId(UUID id) {
-    this.id = id;
-  }
+    public IdentifierPojo() {}
 
-  public UUID getCorrelationId() {
-    return correlationId;
-  }
+    public UUID getId() {
+        return id;
+    }
 
-  public void setCorrelationId(UUID correlationId) {
-    this.correlationId = correlationId;
-  }
+    public void setId(UUID id) {
+        this.id = id;
+    }
 
-  public UUID getParentId() {
-    return parentId;
-  }
+    public UUID getCorrelationId() {
+        return correlationId;
+    }
 
-  public void setParentId(UUID parentId) {
-    this.parentId = parentId;
-  }
-  ;
+    public void setCorrelationId(UUID correlationId) {
+        this.correlationId = correlationId;
+    }
+
+    public UUID getParentId() {
+        return parentId;
+    }
+
+    public void setParentId(UUID parentId) {
+        this.parentId = parentId;
+    }
+    ;
 }

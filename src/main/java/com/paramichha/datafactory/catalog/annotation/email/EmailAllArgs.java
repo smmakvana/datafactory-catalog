@@ -28,6 +28,7 @@ import lombok.Value;
 @Value
 @AllArgsConstructor
 public class EmailAllArgs {
-  @NotBlank @Email String email;
-  @Email String backupEmail;
+    @NotBlank @Email String email;
+
+    @Email String backupEmail;
 }

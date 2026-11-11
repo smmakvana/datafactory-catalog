@@ -30,7 +30,9 @@ import lombok.Value;
 @Value
 @AllArgsConstructor
 public class DateAllArgs {
-  @NotNull @Past LocalDate dateOfBirth;
-  @NotNull @FutureOrPresent LocalDate expiryDate;
-  LocalDate optionalDate;
+    @NotNull @Past LocalDate dateOfBirth;
+
+    @NotNull @FutureOrPresent LocalDate expiryDate;
+
+    LocalDate optionalDate;
 }

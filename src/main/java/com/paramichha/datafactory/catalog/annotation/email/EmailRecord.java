@@ -23,4 +23,5 @@ import jakarta.validation.constraints.NotBlank;
  *
  * <p>Constraints: @Email, @NotBlank.
  */
-public record EmailRecord(@NotBlank @Email String email, @Email String backupEmail) {}
+public record EmailRecord(
+        @NotBlank @Email String email, @Email String backupEmail) {}

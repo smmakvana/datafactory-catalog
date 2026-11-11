@@ -27,6 +27,6 @@ import java.util.List;
  * <p>Constraints: @NotBlank, @NotNull, @Size, @Valid.
  */
 public record TradeWithLegs(
-    @NotBlank String tradeId,
-    @NotNull @Size(min = 1) @Valid List<TradeLeg> legs,
-    @NotNull TradeStatus status) {}
+        @NotBlank String tradeId,
+        @NotNull @Size(min = 1) @Valid List<TradeLeg> legs,
+        @NotNull TradeStatus status) {}

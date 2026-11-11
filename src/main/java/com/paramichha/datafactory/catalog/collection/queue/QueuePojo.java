@@ -26,36 +26,35 @@ import java.util.Queue;
  * <p>Constraints: @NotEmpty, @Size.
  */
 public class QueuePojo {
-  @NotEmpty Queue<String> tasks;
+    @NotEmpty Queue<String> tasks;
 
-  @Size(min = 1, max = 10)
-  Deque<String> history;
+    @Size(min = 1, max = 10) Deque<String> history;
 
-  Queue<Integer> priorities;
+    Queue<Integer> priorities;
 
-  public QueuePojo() {}
+    public QueuePojo() {}
 
-  public Queue<String> getTasks() {
-    return tasks;
-  }
+    public Queue<String> getTasks() {
+        return tasks;
+    }
 
-  public void setTasks(Queue<String> tasks) {
-    this.tasks = tasks;
-  }
+    public void setTasks(Queue<String> tasks) {
+        this.tasks = tasks;
+    }
 
-  public Deque<String> getHistory() {
-    return history;
-  }
+    public Deque<String> getHistory() {
+        return history;
+    }
 
-  public void setHistory(Deque<String> history) {
-    this.history = history;
-  }
+    public void setHistory(Deque<String> history) {
+        this.history = history;
+    }
 
-  public Queue<Integer> getPriorities() {
-    return priorities;
-  }
+    public Queue<Integer> getPriorities() {
+        return priorities;
+    }
 
-  public void setPriorities(Queue<Integer> priorities) {
-    this.priorities = priorities;
-  }
+    public void setPriorities(Queue<Integer> priorities) {
+        this.priorities = priorities;
+    }
 }

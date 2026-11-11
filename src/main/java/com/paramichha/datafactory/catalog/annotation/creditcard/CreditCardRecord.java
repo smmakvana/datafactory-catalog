@@ -23,5 +23,7 @@ import jakarta.validation.constraints.NotBlank;
  * <p>Constraints: @NotBlank.
  */
 public record CreditCardRecord(
-    @NotBlank @org.hibernate.validator.constraints.CreditCardNumber String cardNumber,
-    @NotBlank String cardHolder) {}
+        @NotBlank @org.hibernate.validator.constraints.CreditCardNumber
+        String cardNumber,
+
+        @NotBlank String cardHolder) {}

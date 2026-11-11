@@ -24,25 +24,28 @@ import org.hibernate.validator.constraints.URL;
  * <p>Constraints: @NotBlank.
  */
 public class UrlPojo {
-  @NotBlank @URL String website;
-  @URL String apiEndpoint;
+    @NotBlank @URL
+    String website;
 
-  public UrlPojo() {}
+    @URL
+    String apiEndpoint;
 
-  public String getWebsite() {
-    return website;
-  }
+    public UrlPojo() {}
 
-  public void setWebsite(String website) {
-    this.website = website;
-  }
+    public String getWebsite() {
+        return website;
+    }
 
-  public String getApiEndpoint() {
-    return apiEndpoint;
-  }
+    public void setWebsite(String website) {
+        this.website = website;
+    }
 
-  public void setApiEndpoint(String apiEndpoint) {
-    this.apiEndpoint = apiEndpoint;
-  }
-  ;
+    public String getApiEndpoint() {
+        return apiEndpoint;
+    }
+
+    public void setApiEndpoint(String apiEndpoint) {
+        this.apiEndpoint = apiEndpoint;
+    }
+    ;
 }

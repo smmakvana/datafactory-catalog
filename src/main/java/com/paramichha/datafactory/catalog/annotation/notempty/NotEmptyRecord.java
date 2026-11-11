@@ -23,6 +23,6 @@ import jakarta.validation.constraints.NotEmpty;
  * <p>Constraints: @NotEmpty.
  */
 public record NotEmptyRecord(
-    @NotEmpty String name,
-    @NotEmpty java.util.List<String> roles,
-    @NotEmpty java.util.List<Integer> scores) {}
+        @NotEmpty String name,
+        @NotEmpty java.util.List<String> roles,
+        @NotEmpty java.util.List<Integer> scores) {}

@@ -22,34 +22,38 @@ import jakarta.validation.constraints.NotNull;
  *
  * <p>Constraints: @NotNull.
  */
+// A fixture for plain array properties: it stores and returns the arrays as given, on purpose.
+@SuppressWarnings({"PMD.ArrayIsStoredDirectly", "PMD.MethodReturnsInternalArray", "PMD.UseVarargs"})
 public class ArrayPojo {
-  @NotNull String[] names;
-  @NotNull int[] scores;
-  String[] tags;
+    @NotNull String[] names;
 
-  public ArrayPojo() {}
+    @NotNull int[] scores;
 
-  public String[] getNames() {
-    return names;
-  }
+    String[] tags;
 
-  public void setNames(String[] names) {
-    this.names = names;
-  }
+    public ArrayPojo() {}
 
-  public int[] getScores() {
-    return scores;
-  }
+    public String[] getNames() {
+        return names;
+    }
 
-  public void setScores(int[] scores) {
-    this.scores = scores;
-  }
+    public void setNames(String[] names) {
+        this.names = names;
+    }
 
-  public String[] getTags() {
-    return tags;
-  }
+    public int[] getScores() {
+        return scores;
+    }
 
-  public void setTags(String[] tags) {
-    this.tags = tags;
-  }
+    public void setScores(int[] scores) {
+        this.scores = scores;
+    }
+
+    public String[] getTags() {
+        return tags;
+    }
+
+    public void setTags(String[] tags) {
+        this.tags = tags;
+    }
 }

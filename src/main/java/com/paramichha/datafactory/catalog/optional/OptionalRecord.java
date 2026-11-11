@@ -23,5 +23,4 @@ import java.util.Optional;
  *
  * <p>Constraints: @NotBlank.
  */
-public record OptionalRecord(
-    @NotBlank String required, Optional<String> nickname, Optional<Integer> age) {}
+public record OptionalRecord(@NotBlank String required, Optional<String> nickname, Optional<Integer> age) {}

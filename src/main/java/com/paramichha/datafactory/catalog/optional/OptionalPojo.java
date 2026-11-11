@@ -24,34 +24,35 @@ import java.util.Optional;
  * <p>Constraints: @NotBlank.
  */
 public class OptionalPojo {
-  @NotBlank String required;
-  Optional<String> nickname;
-  Optional<Integer> age;
+    @NotBlank String required;
 
-  public OptionalPojo() {}
+    Optional<String> nickname;
+    Optional<Integer> age;
 
-  public String getRequired() {
-    return required;
-  }
+    public OptionalPojo() {}
 
-  public void setRequired(String required) {
-    this.required = required;
-  }
+    public String getRequired() {
+        return required;
+    }
 
-  public Optional<String> getNickname() {
-    return nickname;
-  }
+    public void setRequired(String required) {
+        this.required = required;
+    }
 
-  public void setNickname(Optional<String> nickname) {
-    this.nickname = nickname;
-  }
+    public Optional<String> getNickname() {
+        return nickname;
+    }
 
-  public Optional<Integer> getAge() {
-    return age;
-  }
+    public void setNickname(Optional<String> nickname) {
+        this.nickname = nickname;
+    }
 
-  public void setAge(Optional<Integer> age) {
-    this.age = age;
-  }
-  ;
+    public Optional<Integer> getAge() {
+        return age;
+    }
+
+    public void setAge(Optional<Integer> age) {
+        this.age = age;
+    }
+    ;
 }

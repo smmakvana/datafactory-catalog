@@ -27,7 +27,7 @@ import java.math.BigDecimal;
  * <p>Constraints: @NotBlank, @NotNull, @Positive, @Size.
  */
 public record Payment(
-    @NotBlank String fromIban,
-    @NotBlank String toIban,
-    @NotNull @Positive BigDecimal amount,
-    @NotBlank @Size(max = 35) String reference) {}
+        @NotBlank String fromIban,
+        @NotBlank String toIban,
+        @NotNull @Positive BigDecimal amount,
+        @NotBlank @Size(max = 35) String reference) {}

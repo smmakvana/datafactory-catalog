@@ -28,6 +28,8 @@ import org.hibernate.validator.constraints.CreditCardNumber;
 @Value
 @AllArgsConstructor
 public class CreditCardAllArgs {
-  @NotBlank @CreditCardNumber String cardNumber;
-  @NotBlank String cardHolder;
+    @NotBlank @CreditCardNumber
+    String cardNumber;
+
+    @NotBlank String cardHolder;
 }

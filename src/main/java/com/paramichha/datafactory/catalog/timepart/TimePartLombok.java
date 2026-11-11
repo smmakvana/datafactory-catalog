@@ -30,8 +30,11 @@ import lombok.Value;
 @Value
 @Builder
 public class TimePartLombok {
-  @NotNull Year graduationYear;
-  @NotNull YearMonth expiryMonth;
-  @NotNull LocalTime openTime;
-  LocalTime closeTime;
+    @NotNull Year graduationYear;
+
+    @NotNull YearMonth expiryMonth;
+
+    @NotNull LocalTime openTime;
+
+    LocalTime closeTime;
 }

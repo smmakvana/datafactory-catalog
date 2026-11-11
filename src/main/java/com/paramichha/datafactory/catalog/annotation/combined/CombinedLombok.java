@@ -36,16 +36,13 @@ import lombok.Value;
 @Value
 @Builder
 public class CombinedLombok {
-  @NotBlank @Email String email;
+    @NotBlank @Email String email;
 
-  @NotBlank
-  @Size(min = 2, max = 50)
-  String name;
+    @NotBlank @Size(min = 2, max = 50) String name;
 
-  @Min(18)
-  @Max(120)
-  int age;
+    @Min(18) @Max(120) int age;
 
-  @NotNull @Past LocalDate dateOfBirth;
-  @NotNull @Positive BigDecimal balance;
+    @NotNull @Past LocalDate dateOfBirth;
+
+    @NotNull @Positive BigDecimal balance;
 }

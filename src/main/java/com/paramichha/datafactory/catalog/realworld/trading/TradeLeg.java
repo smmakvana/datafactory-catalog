@@ -26,7 +26,7 @@ import java.math.BigDecimal;
  * <p>Constraints: @NotBlank, @NotNull, @Positive.
  */
 public record TradeLeg(
-    @NotNull TradeSide side,
-    @NotBlank String instrument,
-    @NotNull @Positive BigDecimal quantity,
-    @NotNull @Positive BigDecimal price) {}
+        @NotNull TradeSide side,
+        @NotBlank String instrument,
+        @NotNull @Positive BigDecimal quantity,
+        @NotNull @Positive BigDecimal price) {}

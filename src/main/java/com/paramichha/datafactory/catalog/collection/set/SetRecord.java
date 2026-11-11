@@ -25,4 +25,4 @@ import java.util.Set;
  * <p>Constraints: @NotEmpty, @Size.
  */
 public record SetRecord(
-    @NotEmpty Set<String> roles, @Size(min = 1, max = 5) Set<String> tags, Set<Integer> scores) {}
+        @NotEmpty Set<String> roles, @Size(min = 1, max = 5) Set<String> tags, Set<Integer> scores) {}

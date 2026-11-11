@@ -27,7 +27,9 @@ import lombok.Value;
 @Value
 @Builder
 public class NotBlankLombok {
-  @NotBlank String username;
-  @NotBlank String firstName;
-  @NotBlank String lastName;
+    @NotBlank String username;
+
+    @NotBlank String firstName;
+
+    @NotBlank String lastName;
 }

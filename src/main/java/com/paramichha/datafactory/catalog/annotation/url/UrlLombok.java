@@ -28,6 +28,9 @@ import org.hibernate.validator.constraints.URL;
 @Value
 @Builder
 public class UrlLombok {
-  @NotBlank @URL String website;
-  @URL String apiEndpoint;
+    @NotBlank @URL
+    String website;
+
+    @URL
+    String apiEndpoint;
 }

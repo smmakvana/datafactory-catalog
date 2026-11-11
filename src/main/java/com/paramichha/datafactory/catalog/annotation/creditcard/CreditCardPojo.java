@@ -24,25 +24,27 @@ import org.hibernate.validator.constraints.CreditCardNumber;
  * <p>Constraints: @NotBlank.
  */
 public class CreditCardPojo {
-  @NotBlank @CreditCardNumber String cardNumber;
-  @NotBlank String cardHolder;
+    @NotBlank @CreditCardNumber
+    String cardNumber;
 
-  public CreditCardPojo() {}
+    @NotBlank String cardHolder;
 
-  public String getCardNumber() {
-    return cardNumber;
-  }
+    public CreditCardPojo() {}
 
-  public void setCardNumber(String cardNumber) {
-    this.cardNumber = cardNumber;
-  }
+    public String getCardNumber() {
+        return cardNumber;
+    }
 
-  public String getCardHolder() {
-    return cardHolder;
-  }
+    public void setCardNumber(String cardNumber) {
+        this.cardNumber = cardNumber;
+    }
 
-  public void setCardHolder(String cardHolder) {
-    this.cardHolder = cardHolder;
-  }
-  ;
+    public String getCardHolder() {
+        return cardHolder;
+    }
+
+    public void setCardHolder(String cardHolder) {
+        this.cardHolder = cardHolder;
+    }
+    ;
 }

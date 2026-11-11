@@ -30,10 +30,9 @@ import lombok.Value;
 @Value
 @Builder
 public class QueueLombok {
-  @NotEmpty Queue<String> tasks;
+    @NotEmpty Queue<String> tasks;
 
-  @Size(min = 1, max = 10)
-  Deque<String> history;
+    @Size(min = 1, max = 10) Deque<String> history;
 
-  Queue<Integer> priorities;
+    Queue<Integer> priorities;
 }

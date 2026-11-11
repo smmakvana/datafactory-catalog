@@ -23,5 +23,5 @@ import java.util.List;
  * <p>Used as a control: it has no constraints.
  */
 public class ErasedGeneric {
-  public List items;
+    public List items;
 }

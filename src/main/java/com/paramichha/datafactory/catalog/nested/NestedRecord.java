@@ -25,4 +25,6 @@ import jakarta.validation.constraints.NotNull;
  * <p>Constraints: @NotBlank, @NotNull, @Valid.
  */
 public record NestedRecord(
-    @NotBlank String name, @NotNull @Valid Address address, @NotBlank String email) {}
+        @NotBlank String name,
+        @NotNull @Valid Address address,
+        @NotBlank String email) {}

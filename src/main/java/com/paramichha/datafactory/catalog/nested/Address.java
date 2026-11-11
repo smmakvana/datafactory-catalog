@@ -23,7 +23,7 @@ import jakarta.validation.constraints.NotBlank;
  * <p>Constraints: @NotBlank.
  */
 public record Address(
-    @NotBlank String line1,
-    @NotBlank String city,
-    @NotBlank String postcode,
-    @NotBlank String country) {}
+        @NotBlank String line1,
+        @NotBlank String city,
+        @NotBlank String postcode,
+        @NotBlank String country) {}

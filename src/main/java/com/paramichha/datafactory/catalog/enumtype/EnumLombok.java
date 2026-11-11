@@ -27,6 +27,7 @@ import lombok.Value;
 @Value
 @Builder
 public class EnumLombok {
-  @NotNull OrderStatus status;
-  OrderStatus previousStatus;
+    @NotNull OrderStatus status;
+
+    OrderStatus previousStatus;
 }

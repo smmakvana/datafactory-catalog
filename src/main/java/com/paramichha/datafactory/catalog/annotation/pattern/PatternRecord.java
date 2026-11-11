@@ -23,5 +23,5 @@ import jakarta.validation.constraints.Pattern;
  * <p>Constraints: @Pattern.
  */
 public record PatternRecord(
-    @Pattern(regexp = "[A-Z]{2}\\d{4}") String reference,
-    @Pattern(regexp = "\\d{2}/\\d{2}") String expiryDate) {}
+        @Pattern(regexp = "[A-Z]{2}\\d{4}") String reference,
+        @Pattern(regexp = "\\d{2}/\\d{2}") String expiryDate) {}

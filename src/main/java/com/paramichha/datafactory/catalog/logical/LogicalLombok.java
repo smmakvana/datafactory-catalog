@@ -28,8 +28,11 @@ import lombok.Value;
 @Value
 @Builder
 public class LogicalLombok {
-  @AssertTrue boolean active;
-  @AssertTrue Boolean verified;
-  @AssertFalse boolean deleted;
-  @AssertFalse Boolean archived;
+    @AssertTrue boolean active;
+
+    @AssertTrue Boolean verified;
+
+    @AssertFalse boolean deleted;
+
+    @AssertFalse Boolean archived;
 }

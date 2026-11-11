@@ -27,7 +27,9 @@ import lombok.Value;
 @Value
 @Builder
 public class ArrayLombok {
-  @NotNull String[] names;
-  @NotNull int[] scores;
-  String[] tags;
+    @NotNull String[] names;
+
+    @NotNull int[] scores;
+
+    String[] tags;
 }

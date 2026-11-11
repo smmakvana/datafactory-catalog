@@ -26,7 +26,7 @@ import java.math.BigDecimal;
  * <p>Constraints: @NotBlank, @NotNull, @Positive.
  */
 public record PaymentDomestic(
-    @NotBlank String sortCode,
-    @NotBlank String accountNumber,
-    @NotNull @Positive BigDecimal amount,
-    @NotBlank String reference) {}
+        @NotBlank String sortCode,
+        @NotBlank String accountNumber,
+        @NotNull @Positive BigDecimal amount,
+        @NotBlank String reference) {}
