@@ -24,25 +24,27 @@ import org.hibernate.validator.constraints.EAN;
  * <p>Constraints: @NotBlank.
  */
 public class EanPojo {
-  @NotBlank @EAN String barcode;
-  @NotBlank String productName;
+    @NotBlank @EAN
+    String barcode;
 
-  public EanPojo() {}
+    @NotBlank String productName;
 
-  public String getBarcode() {
-    return barcode;
-  }
+    public EanPojo() {}
 
-  public void setBarcode(String barcode) {
-    this.barcode = barcode;
-  }
+    public String getBarcode() {
+        return barcode;
+    }
 
-  public String getProductName() {
-    return productName;
-  }
+    public void setBarcode(String barcode) {
+        this.barcode = barcode;
+    }
 
-  public void setProductName(String productName) {
-    this.productName = productName;
-  }
-  ;
+    public String getProductName() {
+        return productName;
+    }
+
+    public void setProductName(String productName) {
+        this.productName = productName;
+    }
+    ;
 }

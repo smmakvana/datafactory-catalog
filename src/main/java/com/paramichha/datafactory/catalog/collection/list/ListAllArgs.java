@@ -30,11 +30,10 @@ import lombok.Value;
 @Value
 @AllArgsConstructor
 public class ListAllArgs {
-  @NotEmpty List<String> roles;
+    @NotEmpty List<String> roles;
 
-  @Size(min = 1, max = 5)
-  List<String> tags;
+    @Size(min = 1, max = 5) List<String> tags;
 
-  List<Integer> scores;
-  Collection<String> labels;
+    List<Integer> scores;
+    Collection<String> labels;
 }

@@ -24,8 +24,8 @@ import jakarta.validation.constraints.Size;
  * <p>Constraints: @NotBlank, @Size.
  */
 public record PostalAddress(
-    @NotBlank String line1,
-    String line2,
-    @NotBlank String city,
-    @NotBlank String postcode,
-    @NotBlank @Size(min = 2, max = 2) String countryCode) {}
+        @NotBlank String line1,
+        String line2,
+        @NotBlank String city,
+        @NotBlank String postcode,
+        @NotBlank @Size(min = 2, max = 2) String countryCode) {}

@@ -24,34 +24,36 @@ import java.util.List;
  * <p>Constraints: @NotEmpty.
  */
 public class NotEmptyPojo {
-  @NotEmpty String name;
-  @NotEmpty List<String> roles;
-  @NotEmpty List<Integer> scores;
+    @NotEmpty String name;
 
-  public NotEmptyPojo() {}
+    @NotEmpty List<String> roles;
 
-  public String getName() {
-    return name;
-  }
+    @NotEmpty List<Integer> scores;
 
-  public void setName(String name) {
-    this.name = name;
-  }
+    public NotEmptyPojo() {}
 
-  public List<String> getRoles() {
-    return roles;
-  }
+    public String getName() {
+        return name;
+    }
 
-  public void setRoles(List<String> roles) {
-    this.roles = roles;
-  }
+    public void setName(String name) {
+        this.name = name;
+    }
 
-  public List<Integer> getScores() {
-    return scores;
-  }
+    public List<String> getRoles() {
+        return roles;
+    }
 
-  public void setScores(List<Integer> scores) {
-    this.scores = scores;
-  }
-  ;
+    public void setRoles(List<String> roles) {
+        this.roles = roles;
+    }
+
+    public List<Integer> getScores() {
+        return scores;
+    }
+
+    public void setScores(List<Integer> scores) {
+        this.scores = scores;
+    }
+    ;
 }

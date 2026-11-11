@@ -24,39 +24,36 @@ import java.util.List;
  * <p>Constraints: @Size.
  */
 public class SizePojo {
-  @Size(min = 2, max = 50)
-  String name;
+    @Size(min = 2, max = 50) String name;
 
-  @Size(min = 8, max = 100)
-  String password;
+    @Size(min = 8, max = 100) String password;
 
-  @Size(min = 1, max = 10)
-  List<String> tags;
+    @Size(min = 1, max = 10) List<String> tags;
 
-  public SizePojo() {}
+    public SizePojo() {}
 
-  public String getName() {
-    return name;
-  }
+    public String getName() {
+        return name;
+    }
 
-  public void setName(String name) {
-    this.name = name;
-  }
+    public void setName(String name) {
+        this.name = name;
+    }
 
-  public String getPassword() {
-    return password;
-  }
+    public String getPassword() {
+        return password;
+    }
 
-  public void setPassword(String password) {
-    this.password = password;
-  }
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
-  public List<String> getTags() {
-    return tags;
-  }
+    public List<String> getTags() {
+        return tags;
+    }
 
-  public void setTags(List<String> tags) {
-    this.tags = tags;
-  }
-  ;
+    public void setTags(List<String> tags) {
+        this.tags = tags;
+    }
+    ;
 }

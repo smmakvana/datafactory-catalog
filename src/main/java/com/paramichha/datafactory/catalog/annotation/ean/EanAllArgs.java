@@ -28,6 +28,8 @@ import org.hibernate.validator.constraints.EAN;
 @Value
 @AllArgsConstructor
 public class EanAllArgs {
-  @NotBlank @EAN String barcode;
-  @NotBlank String productName;
+    @NotBlank @EAN
+    String barcode;
+
+    @NotBlank String productName;
 }

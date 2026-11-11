@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SpotBugs findings that are the point of a fixture, not a defect.
+
+     The catalog classes are test subjects: each one shows DataFactory and TestKit a class shape that
+     real projects have. Changing a shape to satisfy SpotBugs would remove the case it is there for. -->
+<FindBugsFilter>
+    <!-- Fixtures hold lists, maps, arrays and dates in plain fields and return them as they are,
+         as ordinary records, Lombok classes and JavaBeans do. -->
+    <Match>
+        <Bug pattern="EI_EXPOSE_REP,EI_EXPOSE_REP2"/>
+    </Match>
+    <!-- The "unsupported" fixtures are fields-only classes that DataFactory must refuse to build. -->
+    <Match>
+        <Package name="com.paramichha.datafactory.catalog.unsupported"/>
+        <Bug pattern="UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD"/>
+    </Match>
+</FindBugsFilter>

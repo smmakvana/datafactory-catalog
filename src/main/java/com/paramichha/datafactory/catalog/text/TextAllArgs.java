@@ -28,14 +28,10 @@ import lombok.Value;
 @Value
 @AllArgsConstructor
 public class TextAllArgs {
-  @NotBlank
-  @Size(min = 1, max = 100)
-  String name;
+    @NotBlank @Size(min = 1, max = 100) String name;
 
-  @NotBlank
-  @Size(min = 2, max = 500)
-  String description;
+    @NotBlank @Size(min = 2, max = 500) String description;
 
-  String notes;
-  char initial;
+    String notes;
+    char initial;
 }

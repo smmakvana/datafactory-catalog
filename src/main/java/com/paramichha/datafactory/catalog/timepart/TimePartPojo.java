@@ -26,43 +26,46 @@ import java.time.YearMonth;
  * <p>Constraints: @NotNull.
  */
 public class TimePartPojo {
-  @NotNull Year graduationYear;
-  @NotNull YearMonth expiryMonth;
-  @NotNull LocalTime openTime;
-  LocalTime closeTime;
+    @NotNull Year graduationYear;
 
-  public TimePartPojo() {}
+    @NotNull YearMonth expiryMonth;
 
-  public Year getGraduationYear() {
-    return graduationYear;
-  }
+    @NotNull LocalTime openTime;
 
-  public void setGraduationYear(Year graduationYear) {
-    this.graduationYear = graduationYear;
-  }
+    LocalTime closeTime;
 
-  public YearMonth getExpiryMonth() {
-    return expiryMonth;
-  }
+    public TimePartPojo() {}
 
-  public void setExpiryMonth(YearMonth expiryMonth) {
-    this.expiryMonth = expiryMonth;
-  }
+    public Year getGraduationYear() {
+        return graduationYear;
+    }
 
-  public LocalTime getOpenTime() {
-    return openTime;
-  }
+    public void setGraduationYear(Year graduationYear) {
+        this.graduationYear = graduationYear;
+    }
 
-  public void setOpenTime(LocalTime openTime) {
-    this.openTime = openTime;
-  }
+    public YearMonth getExpiryMonth() {
+        return expiryMonth;
+    }
 
-  public LocalTime getCloseTime() {
-    return closeTime;
-  }
+    public void setExpiryMonth(YearMonth expiryMonth) {
+        this.expiryMonth = expiryMonth;
+    }
 
-  public void setCloseTime(LocalTime closeTime) {
-    this.closeTime = closeTime;
-  }
-  ;
+    public LocalTime getOpenTime() {
+        return openTime;
+    }
+
+    public void setOpenTime(LocalTime openTime) {
+        this.openTime = openTime;
+    }
+
+    public LocalTime getCloseTime() {
+        return closeTime;
+    }
+
+    public void setCloseTime(LocalTime closeTime) {
+        this.closeTime = closeTime;
+    }
+    ;
 }

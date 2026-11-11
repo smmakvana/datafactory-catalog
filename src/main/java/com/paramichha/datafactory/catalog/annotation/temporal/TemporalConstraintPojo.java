@@ -28,43 +28,46 @@ import java.time.LocalDateTime;
  * <p>Constraints: @Future, @FutureOrPresent, @Past, @PastOrPresent.
  */
 public class TemporalConstraintPojo {
-  @Past LocalDate dateOfBirth;
-  @Future LocalDate expiryDate;
-  @PastOrPresent LocalDateTime createdAt;
-  @FutureOrPresent LocalDateTime scheduledAt;
+    @Past LocalDate dateOfBirth;
 
-  public TemporalConstraintPojo() {}
+    @Future LocalDate expiryDate;
 
-  public LocalDate getDateOfBirth() {
-    return dateOfBirth;
-  }
+    @PastOrPresent LocalDateTime createdAt;
 
-  public void setDateOfBirth(LocalDate dateOfBirth) {
-    this.dateOfBirth = dateOfBirth;
-  }
+    @FutureOrPresent LocalDateTime scheduledAt;
 
-  public LocalDate getExpiryDate() {
-    return expiryDate;
-  }
+    public TemporalConstraintPojo() {}
 
-  public void setExpiryDate(LocalDate expiryDate) {
-    this.expiryDate = expiryDate;
-  }
+    public LocalDate getDateOfBirth() {
+        return dateOfBirth;
+    }
 
-  public LocalDateTime getCreatedAt() {
-    return createdAt;
-  }
+    public void setDateOfBirth(LocalDate dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
 
-  public void setCreatedAt(LocalDateTime createdAt) {
-    this.createdAt = createdAt;
-  }
+    public LocalDate getExpiryDate() {
+        return expiryDate;
+    }
 
-  public LocalDateTime getScheduledAt() {
-    return scheduledAt;
-  }
+    public void setExpiryDate(LocalDate expiryDate) {
+        this.expiryDate = expiryDate;
+    }
 
-  public void setScheduledAt(LocalDateTime scheduledAt) {
-    this.scheduledAt = scheduledAt;
-  }
-  ;
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(LocalDateTime createdAt) {
+        this.createdAt = createdAt;
+    }
+
+    public LocalDateTime getScheduledAt() {
+        return scheduledAt;
+    }
+
+    public void setScheduledAt(LocalDateTime scheduledAt) {
+        this.scheduledAt = scheduledAt;
+    }
+    ;
 }

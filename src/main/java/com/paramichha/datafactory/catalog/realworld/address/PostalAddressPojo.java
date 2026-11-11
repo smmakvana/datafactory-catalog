@@ -24,55 +24,56 @@ import jakarta.validation.constraints.Size;
  * <p>Constraints: @NotBlank, @Size.
  */
 public class PostalAddressPojo {
-  @NotBlank String line1;
-  String line2;
-  @NotBlank String city;
-  @NotBlank String postcode;
+    @NotBlank String line1;
 
-  @NotBlank
-  @Size(min = 2, max = 2)
-  String countryCode;
+    String line2;
 
-  public PostalAddressPojo() {}
+    @NotBlank String city;
 
-  public String getLine1() {
-    return line1;
-  }
+    @NotBlank String postcode;
 
-  public void setLine1(String line1) {
-    this.line1 = line1;
-  }
+    @NotBlank @Size(min = 2, max = 2) String countryCode;
 
-  public String getLine2() {
-    return line2;
-  }
+    public PostalAddressPojo() {}
 
-  public void setLine2(String line2) {
-    this.line2 = line2;
-  }
+    public String getLine1() {
+        return line1;
+    }
 
-  public String getCity() {
-    return city;
-  }
+    public void setLine1(String line1) {
+        this.line1 = line1;
+    }
 
-  public void setCity(String city) {
-    this.city = city;
-  }
+    public String getLine2() {
+        return line2;
+    }
 
-  public String getPostcode() {
-    return postcode;
-  }
+    public void setLine2(String line2) {
+        this.line2 = line2;
+    }
 
-  public void setPostcode(String postcode) {
-    this.postcode = postcode;
-  }
+    public String getCity() {
+        return city;
+    }
 
-  public String getCountryCode() {
-    return countryCode;
-  }
+    public void setCity(String city) {
+        this.city = city;
+    }
 
-  public void setCountryCode(String countryCode) {
-    this.countryCode = countryCode;
-  }
-  ;
+    public String getPostcode() {
+        return postcode;
+    }
+
+    public void setPostcode(String postcode) {
+        this.postcode = postcode;
+    }
+
+    public String getCountryCode() {
+        return countryCode;
+    }
+
+    public void setCountryCode(String countryCode) {
+        this.countryCode = countryCode;
+    }
+    ;
 }

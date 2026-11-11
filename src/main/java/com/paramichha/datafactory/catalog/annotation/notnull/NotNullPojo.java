@@ -25,43 +25,46 @@ import java.util.UUID;
  * <p>Constraints: @NotNull.
  */
 public class NotNullPojo {
-  @NotNull String name;
-  @NotNull Integer age;
-  @NotNull UUID id;
-  @NotNull LocalDate dob;
+    @NotNull String name;
 
-  public NotNullPojo() {}
+    @NotNull Integer age;
 
-  public String getName() {
-    return name;
-  }
+    @NotNull UUID id;
 
-  public void setName(String name) {
-    this.name = name;
-  }
+    @NotNull LocalDate dob;
 
-  public Integer getAge() {
-    return age;
-  }
+    public NotNullPojo() {}
 
-  public void setAge(Integer age) {
-    this.age = age;
-  }
+    public String getName() {
+        return name;
+    }
 
-  public UUID getId() {
-    return id;
-  }
+    public void setName(String name) {
+        this.name = name;
+    }
 
-  public void setId(UUID id) {
-    this.id = id;
-  }
+    public Integer getAge() {
+        return age;
+    }
 
-  public LocalDate getDob() {
-    return dob;
-  }
+    public void setAge(Integer age) {
+        this.age = age;
+    }
 
-  public void setDob(LocalDate dob) {
-    this.dob = dob;
-  }
-  ;
+    public UUID getId() {
+        return id;
+    }
+
+    public void setId(UUID id) {
+        this.id = id;
+    }
+
+    public LocalDate getDob() {
+        return dob;
+    }
+
+    public void setDob(LocalDate dob) {
+        this.dob = dob;
+    }
+    ;
 }

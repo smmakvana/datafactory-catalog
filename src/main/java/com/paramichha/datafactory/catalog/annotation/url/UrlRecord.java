@@ -23,5 +23,5 @@ import jakarta.validation.constraints.NotBlank;
  * <p>Constraints: @NotBlank.
  */
 public record UrlRecord(
-    @NotBlank @org.hibernate.validator.constraints.URL String website,
-    @org.hibernate.validator.constraints.URL String apiEndpoint) {}
+        @NotBlank @org.hibernate.validator.constraints.URL String website,
+        @org.hibernate.validator.constraints.URL String apiEndpoint) {}

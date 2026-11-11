@@ -28,7 +28,9 @@ import lombok.Value;
 @Value
 @Builder
 public class IdentifierLombok {
-  @NotNull UUID id;
-  @NotNull UUID correlationId;
-  UUID parentId;
+    @NotNull UUID id;
+
+    @NotNull UUID correlationId;
+
+    UUID parentId;
 }

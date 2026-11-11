@@ -28,7 +28,8 @@ import lombok.Value;
 @Value
 @AllArgsConstructor
 public class OptionalAllArgs {
-  @NotBlank String required;
-  Optional<String> nickname;
-  Optional<Integer> age;
+    @NotBlank String required;
+
+    Optional<String> nickname;
+    Optional<Integer> age;
 }

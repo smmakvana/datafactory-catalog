@@ -23,4 +23,6 @@ import jakarta.validation.constraints.NotBlank;
  * <p>Constraints: @NotBlank.
  */
 public record NotBlankRecord(
-    @NotBlank String username, @NotBlank String firstName, @NotBlank String lastName) {}
+        @NotBlank String username,
+        @NotBlank String firstName,
+        @NotBlank String lastName) {}

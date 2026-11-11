@@ -21,5 +21,5 @@ package com.paramichha.datafactory.catalog.unsupported;
  * <p>Used as a control: it has no constraints.
  */
 public class CircularReference {
-  public CircularReference child;
+    public CircularReference child;
 }

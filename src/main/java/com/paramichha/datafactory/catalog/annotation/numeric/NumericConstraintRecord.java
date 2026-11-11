@@ -28,8 +28,8 @@ import jakarta.validation.constraints.PositiveOrZero;
  * <p>Constraints: @Max, @Min, @Negative, @NegativeOrZero, @Positive, @PositiveOrZero.
  */
 public record NumericConstraintRecord(
-    @Min(1) @Max(100) int quantity,
-    @Positive Long id,
-    @PositiveOrZero Integer score,
-    @Negative Integer debt,
-    @NegativeOrZero Long adjustment) {}
+        @Min(1) @Max(100) int quantity,
+        @Positive Long id,
+        @PositiveOrZero Integer score,
+        @Negative Integer debt,
+        @NegativeOrZero Long adjustment) {}

@@ -26,6 +26,6 @@ import java.time.LocalDate;
  * <p>Constraints: @FutureOrPresent, @NotNull, @Past.
  */
 public record DateRecord(
-    @NotNull @Past LocalDate dateOfBirth,
-    @NotNull @FutureOrPresent LocalDate expiryDate,
-    LocalDate optionalDate) {}
+        @NotNull @Past LocalDate dateOfBirth,
+        @NotNull @FutureOrPresent LocalDate expiryDate,
+        LocalDate optionalDate) {}

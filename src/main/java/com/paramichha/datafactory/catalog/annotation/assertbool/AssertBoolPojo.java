@@ -24,25 +24,26 @@ import jakarta.validation.constraints.AssertTrue;
  * <p>Constraints: @AssertFalse, @AssertTrue.
  */
 public class AssertBoolPojo {
-  @AssertTrue boolean active;
-  @AssertFalse boolean deleted;
+    @AssertTrue boolean active;
 
-  public AssertBoolPojo() {}
+    @AssertFalse boolean deleted;
 
-  public boolean isActive() {
-    return active;
-  }
+    public AssertBoolPojo() {}
 
-  public void setActive(boolean active) {
-    this.active = active;
-  }
+    public boolean isActive() {
+        return active;
+    }
 
-  public boolean isDeleted() {
-    return deleted;
-  }
+    public void setActive(boolean active) {
+        this.active = active;
+    }
 
-  public void setDeleted(boolean deleted) {
-    this.deleted = deleted;
-  }
-  ;
+    public boolean isDeleted() {
+        return deleted;
+    }
+
+    public void setDeleted(boolean deleted) {
+        this.deleted = deleted;
+    }
+    ;
 }

@@ -23,5 +23,5 @@ import jakarta.validation.constraints.NotBlank;
  * <p>Constraints: @NotBlank.
  */
 public record EanRecord(
-    @NotBlank @org.hibernate.validator.constraints.EAN String barcode,
-    @NotBlank String productName) {}
+        @NotBlank @org.hibernate.validator.constraints.EAN String barcode,
+        @NotBlank String productName) {}

@@ -32,8 +32,11 @@ import lombok.Value;
 @Value
 @Builder
 public class TemporalConstraintLombok {
-  @Past LocalDate dateOfBirth;
-  @Future LocalDate expiryDate;
-  @PastOrPresent LocalDateTime createdAt;
-  @FutureOrPresent LocalDateTime scheduledAt;
+    @Past LocalDate dateOfBirth;
+
+    @Future LocalDate expiryDate;
+
+    @PastOrPresent LocalDateTime createdAt;
+
+    @FutureOrPresent LocalDateTime scheduledAt;
 }

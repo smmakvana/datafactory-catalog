@@ -28,6 +28,8 @@ import org.hibernate.validator.constraints.ISBN;
 @Value
 @AllArgsConstructor
 public class IsbnAllArgs {
-  @NotBlank @ISBN String isbn;
-  @NotBlank String title;
+    @NotBlank @ISBN
+    String isbn;
+
+    @NotBlank String title;
 }

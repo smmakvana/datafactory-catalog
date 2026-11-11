@@ -28,55 +28,56 @@ import jakarta.validation.constraints.PositiveOrZero;
  * <p>Constraints: @Max, @Min, @Negative, @NegativeOrZero, @Positive, @PositiveOrZero.
  */
 public class NumericConstraintPojo {
-  @Min(1)
-  @Max(100)
-  int quantity;
+    @Min(1) @Max(100) int quantity;
 
-  @Positive Long id;
-  @PositiveOrZero Integer score;
-  @Negative Integer debt;
-  @NegativeOrZero Long adjustment;
+    @Positive Long id;
 
-  public NumericConstraintPojo() {}
+    @PositiveOrZero Integer score;
 
-  public int getQuantity() {
-    return quantity;
-  }
+    @Negative Integer debt;
 
-  public void setQuantity(int quantity) {
-    this.quantity = quantity;
-  }
+    @NegativeOrZero Long adjustment;
 
-  public Long getId() {
-    return id;
-  }
+    public NumericConstraintPojo() {}
 
-  public void setId(Long id) {
-    this.id = id;
-  }
+    public int getQuantity() {
+        return quantity;
+    }
 
-  public Integer getScore() {
-    return score;
-  }
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
 
-  public void setScore(Integer score) {
-    this.score = score;
-  }
+    public Long getId() {
+        return id;
+    }
 
-  public Integer getDebt() {
-    return debt;
-  }
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-  public void setDebt(Integer debt) {
-    this.debt = debt;
-  }
+    public Integer getScore() {
+        return score;
+    }
 
-  public Long getAdjustment() {
-    return adjustment;
-  }
+    public void setScore(Integer score) {
+        this.score = score;
+    }
 
-  public void setAdjustment(Long adjustment) {
-    this.adjustment = adjustment;
-  }
-  ;
+    public Integer getDebt() {
+        return debt;
+    }
+
+    public void setDebt(Integer debt) {
+        this.debt = debt;
+    }
+
+    public Long getAdjustment() {
+        return adjustment;
+    }
+
+    public void setAdjustment(Long adjustment) {
+        this.adjustment = adjustment;
+    }
+    ;
 }

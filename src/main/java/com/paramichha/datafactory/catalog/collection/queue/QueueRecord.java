@@ -26,6 +26,6 @@ import java.util.Queue;
  * <p>Constraints: @NotEmpty, @Size.
  */
 public record QueueRecord(
-    @NotEmpty Queue<String> tasks,
-    @Size(min = 1, max = 10) Deque<String> history,
-    Queue<Integer> priorities) {}
+        @NotEmpty Queue<String> tasks,
+        @Size(min = 1, max = 10) Deque<String> history,
+        Queue<Integer> priorities) {}

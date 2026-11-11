@@ -23,25 +23,26 @@ import jakarta.validation.constraints.NotNull;
  * <p>Constraints: @NotNull.
  */
 public class EnumPojo {
-  @NotNull OrderStatus status;
-  OrderStatus previousStatus;
+    @NotNull OrderStatus status;
 
-  public EnumPojo() {}
+    OrderStatus previousStatus;
 
-  public OrderStatus getStatus() {
-    return status;
-  }
+    public EnumPojo() {}
 
-  public void setStatus(OrderStatus status) {
-    this.status = status;
-  }
+    public OrderStatus getStatus() {
+        return status;
+    }
 
-  public OrderStatus getPreviousStatus() {
-    return previousStatus;
-  }
+    public void setStatus(OrderStatus status) {
+        this.status = status;
+    }
 
-  public void setPreviousStatus(OrderStatus previousStatus) {
-    this.previousStatus = previousStatus;
-  }
-  ;
+    public OrderStatus getPreviousStatus() {
+        return previousStatus;
+    }
+
+    public void setPreviousStatus(OrderStatus previousStatus) {
+        this.previousStatus = previousStatus;
+    }
+    ;
 }

@@ -23,7 +23,7 @@ import jakarta.validation.constraints.NotNull;
  * <p>Constraints: @NotNull.
  */
 public record NotNullRecord(
-    @NotNull String name,
-    @NotNull Integer age,
-    @NotNull java.util.UUID id,
-    @NotNull java.time.LocalDate dob) {}
+        @NotNull String name,
+        @NotNull Integer age,
+        @NotNull java.util.UUID id,
+        @NotNull java.time.LocalDate dob) {}

@@ -24,43 +24,46 @@ import jakarta.validation.constraints.AssertTrue;
  * <p>Constraints: @AssertFalse, @AssertTrue.
  */
 public class LogicalPojo {
-  @AssertTrue boolean active;
-  @AssertTrue Boolean verified;
-  @AssertFalse boolean deleted;
-  @AssertFalse Boolean archived;
+    @AssertTrue boolean active;
 
-  public LogicalPojo() {}
+    @AssertTrue Boolean verified;
 
-  public boolean isActive() {
-    return active;
-  }
+    @AssertFalse boolean deleted;
 
-  public void setActive(boolean active) {
-    this.active = active;
-  }
+    @AssertFalse Boolean archived;
 
-  public Boolean getVerified() {
-    return verified;
-  }
+    public LogicalPojo() {}
 
-  public void setVerified(Boolean verified) {
-    this.verified = verified;
-  }
+    public boolean isActive() {
+        return active;
+    }
 
-  public boolean isDeleted() {
-    return deleted;
-  }
+    public void setActive(boolean active) {
+        this.active = active;
+    }
 
-  public void setDeleted(boolean deleted) {
-    this.deleted = deleted;
-  }
+    public Boolean getVerified() {
+        return verified;
+    }
 
-  public Boolean getArchived() {
-    return archived;
-  }
+    public void setVerified(Boolean verified) {
+        this.verified = verified;
+    }
 
-  public void setArchived(Boolean archived) {
-    this.archived = archived;
-  }
-  ;
+    public boolean isDeleted() {
+        return deleted;
+    }
+
+    public void setDeleted(boolean deleted) {
+        this.deleted = deleted;
+    }
+
+    public Boolean getArchived() {
+        return archived;
+    }
+
+    public void setArchived(Boolean archived) {
+        this.archived = archived;
+    }
+    ;
 }

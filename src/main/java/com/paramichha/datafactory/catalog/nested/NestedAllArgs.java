@@ -29,7 +29,9 @@ import lombok.Value;
 @Value
 @AllArgsConstructor
 public class NestedAllArgs {
-  @NotBlank String name;
-  @NotNull @Valid Address address;
-  @NotBlank String email;
+    @NotBlank String name;
+
+    @NotNull @Valid Address address;
+
+    @NotBlank String email;
 }

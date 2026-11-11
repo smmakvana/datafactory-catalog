@@ -24,49 +24,45 @@ import jakarta.validation.constraints.Size;
  * <p>Constraints: @NotBlank, @Size.
  */
 public class TextPojo {
-  @NotBlank
-  @Size(min = 1, max = 100)
-  String name;
+    @NotBlank @Size(min = 1, max = 100) String name;
 
-  @NotBlank
-  @Size(min = 2, max = 500)
-  String description;
+    @NotBlank @Size(min = 2, max = 500) String description;
 
-  String notes;
-  char initial;
+    String notes;
+    char initial;
 
-  public TextPojo() {}
+    public TextPojo() {}
 
-  public String getName() {
-    return name;
-  }
+    public String getName() {
+        return name;
+    }
 
-  public void setName(String name) {
-    this.name = name;
-  }
+    public void setName(String name) {
+        this.name = name;
+    }
 
-  public String getDescription() {
-    return description;
-  }
+    public String getDescription() {
+        return description;
+    }
 
-  public void setDescription(String description) {
-    this.description = description;
-  }
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
-  public String getNotes() {
-    return notes;
-  }
+    public String getNotes() {
+        return notes;
+    }
 
-  public void setNotes(String notes) {
-    this.notes = notes;
-  }
+    public void setNotes(String notes) {
+        this.notes = notes;
+    }
 
-  public char getInitial() {
-    return initial;
-  }
+    public char getInitial() {
+        return initial;
+    }
 
-  public void setInitial(char initial) {
-    this.initial = initial;
-  }
-  ;
+    public void setInitial(char initial) {
+        this.initial = initial;
+    }
+    ;
 }

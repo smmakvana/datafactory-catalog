@@ -27,7 +27,9 @@ import lombok.Value;
 @Value
 @AllArgsConstructor
 public class NotBlankAllArgs {
-  @NotBlank String username;
-  @NotBlank String firstName;
-  @NotBlank String lastName;
+    @NotBlank String username;
+
+    @NotBlank String firstName;
+
+    @NotBlank String lastName;
 }

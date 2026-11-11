@@ -26,34 +26,36 @@ import java.time.LocalDate;
  * <p>Constraints: @FutureOrPresent, @NotNull, @Past.
  */
 public class DatePojo {
-  @NotNull @Past LocalDate dateOfBirth;
-  @NotNull @FutureOrPresent LocalDate expiryDate;
-  LocalDate optionalDate;
+    @NotNull @Past LocalDate dateOfBirth;
 
-  public DatePojo() {}
+    @NotNull @FutureOrPresent LocalDate expiryDate;
 
-  public LocalDate getDateOfBirth() {
-    return dateOfBirth;
-  }
+    LocalDate optionalDate;
 
-  public void setDateOfBirth(LocalDate dateOfBirth) {
-    this.dateOfBirth = dateOfBirth;
-  }
+    public DatePojo() {}
 
-  public LocalDate getExpiryDate() {
-    return expiryDate;
-  }
+    public LocalDate getDateOfBirth() {
+        return dateOfBirth;
+    }
 
-  public void setExpiryDate(LocalDate expiryDate) {
-    this.expiryDate = expiryDate;
-  }
+    public void setDateOfBirth(LocalDate dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
 
-  public LocalDate getOptionalDate() {
-    return optionalDate;
-  }
+    public LocalDate getExpiryDate() {
+        return expiryDate;
+    }
 
-  public void setOptionalDate(LocalDate optionalDate) {
-    this.optionalDate = optionalDate;
-  }
-  ;
+    public void setExpiryDate(LocalDate expiryDate) {
+        this.expiryDate = expiryDate;
+    }
+
+    public LocalDate getOptionalDate() {
+        return optionalDate;
+    }
+
+    public void setOptionalDate(LocalDate optionalDate) {
+        this.optionalDate = optionalDate;
+    }
+    ;
 }

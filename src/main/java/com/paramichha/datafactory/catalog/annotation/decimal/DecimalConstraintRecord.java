@@ -26,5 +26,5 @@ import java.math.BigDecimal;
  * <p>Constraints: @DecimalMax, @DecimalMin, @Digits.
  */
 public record DecimalConstraintRecord(
-    @DecimalMin("0.00") @DecimalMax("999.99") BigDecimal price,
-    @Digits(integer = 6, fraction = 2) BigDecimal amount) {}
+        @DecimalMin("0.00") @DecimalMax("999.99") BigDecimal price,
+        @Digits(integer = 6, fraction = 2) BigDecimal amount) {}

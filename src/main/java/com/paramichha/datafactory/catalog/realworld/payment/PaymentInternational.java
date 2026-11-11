@@ -27,9 +27,9 @@ import java.math.BigDecimal;
  * <p>Constraints: @NotBlank, @NotNull, @Positive, @Size.
  */
 public record PaymentInternational(
-    @NotBlank String fromIban,
-    @NotBlank String toIban,
-    @NotBlank String bic,
-    @NotNull @Positive BigDecimal amount,
-    @NotBlank String currency,
-    @NotBlank @Size(max = 35) String reference) {}
+        @NotBlank String fromIban,
+        @NotBlank String toIban,
+        @NotBlank String bic,
+        @NotNull @Positive BigDecimal amount,
+        @NotBlank String currency,
+        @NotBlank @Size(max = 35) String reference) {}

@@ -26,7 +26,7 @@ import java.time.YearMonth;
  * <p>Constraints: @NotNull.
  */
 public record TimePartRecord(
-    @NotNull Year graduationYear,
-    @NotNull YearMonth expiryMonth,
-    @NotNull LocalTime openTime,
-    LocalTime closeTime) {}
+        @NotNull Year graduationYear,
+        @NotNull YearMonth expiryMonth,
+        @NotNull LocalTime openTime,
+        LocalTime closeTime) {}

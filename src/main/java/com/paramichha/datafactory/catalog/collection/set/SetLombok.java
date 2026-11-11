@@ -29,10 +29,9 @@ import lombok.Value;
 @Value
 @Builder
 public class SetLombok {
-  @NotEmpty Set<String> roles;
+    @NotEmpty Set<String> roles;
 
-  @Size(min = 1, max = 5)
-  Set<String> tags;
+    @Size(min = 1, max = 5) Set<String> tags;
 
-  Set<Integer> scores;
+    Set<Integer> scores;
 }

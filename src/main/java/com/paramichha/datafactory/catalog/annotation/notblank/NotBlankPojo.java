@@ -23,34 +23,36 @@ import jakarta.validation.constraints.NotBlank;
  * <p>Constraints: @NotBlank.
  */
 public class NotBlankPojo {
-  @NotBlank String username;
-  @NotBlank String firstName;
-  @NotBlank String lastName;
+    @NotBlank String username;
 
-  public NotBlankPojo() {}
+    @NotBlank String firstName;
 
-  public String getUsername() {
-    return username;
-  }
+    @NotBlank String lastName;
 
-  public void setUsername(String username) {
-    this.username = username;
-  }
+    public NotBlankPojo() {}
 
-  public String getFirstName() {
-    return firstName;
-  }
+    public String getUsername() {
+        return username;
+    }
 
-  public void setFirstName(String firstName) {
-    this.firstName = firstName;
-  }
+    public void setUsername(String username) {
+        this.username = username;
+    }
 
-  public String getLastName() {
-    return lastName;
-  }
+    public String getFirstName() {
+        return firstName;
+    }
 
-  public void setLastName(String lastName) {
-    this.lastName = lastName;
-  }
-  ;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+    ;
 }

@@ -24,7 +24,7 @@ import jakarta.validation.constraints.Size;
  * <p>Constraints: @NotEmpty, @Size.
  */
 public record ListRecord(
-    @NotEmpty java.util.List<String> roles,
-    @Size(min = 1, max = 5) java.util.List<String> tags,
-    java.util.List<Integer> scores,
-    java.util.Collection<String> labels) {}
+        @NotEmpty java.util.List<String> roles,
+        @Size(min = 1, max = 5) java.util.List<String> tags,
+        java.util.List<Integer> scores,
+        java.util.Collection<String> labels) {}
